@@ -73,7 +73,9 @@ class TextFileClass {
 
 class TextSearcher {
   public bool ContainsKeyword(string textContent, string keyword) {
-    if (textContent == null) return false;
+        if (textContent == null) {
+            return false;
+        }
     return textContent.Contains(keyword);
   }
 }
